@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    flex-wrap: wrap;
+    font-weight: bold;
+    max-height: 15vh;
+    background-color: rgb(240, 240, 240);
+    padding: 30px;   
+}
+
+header img {
+    margin: 0%;
+    width: 200px;
+}
+
+
+header nav{
+    padding : 5px 5% 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+header nav ul{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 60px;
+    list-style: none;    
+}
+
+header nav ul li a{ 
+    text-decoration: none;
+}
+
+header nav ul button{
+    padding: 5px 15px;
+    font-size: 12px;
+    background-color: rgb(1, 180, 1);
+    border-radius: 5px;
+    cursor: pointer;
+}
+header nav ul button:hover{
+    color: white;
+    background-color: rgb(0, 27, 0);
+}
+
+.produit {
+    padding: 30px 10%;
+    margin-top: 30px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.produit h1 {
+    font-size: 72px;
+}
+
+.produit .presentation p {
+    font-weight: bold;
+    margin-top: 10%;
+}
+
+.produit img {
+    margin: 0%;
+    width: 500px;
+    flex-wrap: wrap;
+}
+
+.produit button{
+    margin-top: 5%;
+    padding: 5px 15px;
+    font-size: 12px;
+    background-color: rgb(1, 180, 1);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.produit button:hover{
+    color: white;
+    background-color: rgb(0, 27, 0);
+}
+
+.produit h3{
+    margin-top: 5vh;
+    font-weight: bold;
+}
+
+.images-exemples .images{
+    align-items: center;
+}
+
+.images-exemples img{
+    margin: 5vh 3vh 5vh ;
+    width: 300px;
+    flex-wrap: wrap;
+}
+
+.infos {
+    max-height: 10vh;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.infos ul{
+    padding : 5px 5% 0 5%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.infos ul li{   
+    list-style: none;
+}
+
+.infos ul li a{
+    margin: 0 30px 0 0;
+    text-decoration: none;
+}
+
+footer {
+    flex-wrap: wrap;
+    background-color: rgb(240, 240, 240);
+    max-height: 10vh;
+    padding: 15px;
+    font-weight: bold;
+}
+
+footer nav {
+    padding : 5px 5% 0 5%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+footer nav ul {
+    list-style: none;
+}
+
+footer nav ul li a{
+    margin: 0 30px 0 0;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 800px)  {
+    .produit img{
+        display: none;
+    }
+    header nav ul{
+        display: none;
+    }
+    footer nav ul{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .infos{
+        display: none;
+    }
+}
+
